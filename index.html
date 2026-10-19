@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<!-- Tablero de stop con la letra H -->
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hola Hundo (Stop)</title>
+    </head>
+    <body>
+        <header>
+            <h1>Heros</h1>
+            <h2>La letra de esta ronda es <strong>H</strong></h2>
+                <a href="#formulario">Hoja de respuestas</a>
+        </header>
+        <a href="#reglas">REGLAS DEL TORNEO</a>
+
+
+        <a> Reglas:</a>
+        <aside id="reglas">
+            <ul>
+                <li>1.	El parcial es individual. Cada estudiante entrega su propio repositorio.</li>
+                <li>2.	Duración: 120 minutos exactos. El cronómetro es público y no se detiene.</strong></li>
+                <li>3.	La letra del torneo se sortea al minuto cero y es la misma para todo el grupo. Todo el contenido que usted invente —nombres, respuestas, nombre del torneo— debe empezar por esa letra.</strong></li>
+                <li>4.	Las rondas son secuenciales: lo que construye en una es el insumo de la siguiente.</li>
+                <li>5.	Al final de cada ronda el profesor anuncia ¡STOP!: todos hacen commit con el formato ronda-NN: descripción. El historial de git es parte de la evaluación.</li>
+                <li>6.	Se permite consultar documentación oficial: MDN, react.dev, getbootstrap.com y la documentación de TypeScript.</li>
+                <li>7.	No se permiten asistentes de inteligencia artificial, código propio de proyectos anteriores ni plantillas descargadas.</li>
+                <li>8.	Todo se escribe durante el parcial, desde una carpeta vacía. Lo único que recibe es el kit del torneo.</li>
+                <li>9.	No se evalúa backend, bases de datos ni estado en React: este parcial cubre HTML, CSS, JavaScript y componentes con props.</li>
+                <li>10.	Cada estudiante tiene dos comodines PISTA (el profesor responde una duda puntual; cuesta el 10 % de esa ronda) y un comodín SALTO (usa el archivo de rescate del kit para continuar; esa ronda vale 0 pero la cadena no se rompe).</li>
+                <li>11.	Si una ronda no le funciona, documente en BITACORA.md qué intentó y qué error obtuvo: eso otorga puntaje parcial.</li>
+                <li>12.	La entrega se hace dentro del tiempo. Lo que llegue después no se evalúa.</li>
+
+            </ul>
+        </aside>
+
+        <main>
+            <form id="formulario" action="#" method="post">
+                <fieldset>
+                    <legend>Respuestas de la ronda</legend>
+
+                    <label for="nombre">Nombre:</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Nombre con H" pattern="H[a-zA-ZÁÉÍÓÚÜÑáéíóúüñ]{2,}" title="Debe comenzar con H y tener al menos tres letras." required>
+
+                    <label for="lugar">Lugar:</label>
+                    <input id="lugar" name="lugar" type="text" placeholder="Lugar con H" pattern="H[a-zA-ZÁÉÍÓÚÜÑáéíóúüñ]{2,}" title="Debe comenzar con H y tener al menos tres letras." required>
+
+                    <label for="animal">Animal:</label>
+                    <input id="animal" name="animal" type="text" placeholder="Animal con H" pattern="H[a-zA-ZÁÉÍÓÚÜÑáéíóúüñ]{2,}" title="Debe comenzar con H y tener al menos tres letras." required>
+
+                    <label for="objeto">Objeto:</label>
+                    <input id="objeto" name="objeto" type="text" placeholder="Objeto con H" pattern="H[a-zA-ZÁÉÍÓÚÜÑáéíóúüñ]{2,}" title="Debe comenzar con H y tener al menos tres letras." required>
+
+                    <label for="marca">Marca:</label>
+                    <input id="marca" name="marca" type="text" placeholder="Marca con H" pattern="H[a-zA-ZÁÉÍÓÚÜÑáéíóúüñ]{2,}" title="Debe comenzar con H y tener al menos tres letras." required>
+
+                    <label for="comida">Comida:</label>
+                    <input id="comida" name="comida" type="text" placeholder="Comida con H" pattern="H[a-zA-ZÁÉÍÓÚÜÑáéíóúüñ]{2,}" title="Debe comenzar con H y tener al menos tres letras." required>
+
+                    <label for="letra">Letra de la ronda:</label>
+                    <select id="letra" name="letra">
+                        <option value="H" selected>H</option> 
+                    </select>
+
+                    <label for="ronda">Número de ronda:</label>
+                    <input id="ronda" name="ronda" type="number" min="1" max="26" value="1" required>
+
+                    <label for="timbre">Timbre del torneo:</label>
+                    <audio id="timbre" controls src="../recursos/timbre.mp3">Tu navegador no soporta audio.</audio>
+
+                    <img src="../recursos/h.png" alt="Escudo del torneo de Stop">
+
+                    <button type="submit">¡STOP!</button>
+                    <button type="reset">Limpiar respuestas</button>
+                </fieldset>
+            </form>
+
+        <table border="1">
+            <caption><strong>Juego STOP</strong></caption>
+            <tr>
+                <th>  Participante </th>
+                <th> Nombre </th>
+                <th> Lugar </th>
+                <th> Animal </th>
+                <th> Objeto </th>
+                <th> Marca</th>
+                <th > Comida</th>
+
+
+            </tr>
+            <tr>
+                <th>Hilda </th>
+                <td> Hercules </td>
+                <td>   Haiti   </td>
+                <td> Hipopotamo </td>
+                <td> Huracan </td>
+                <td>  Hide </td>
+                <td> Hamburguesa </td>
+            </tr>
+            <tr>
+                <th> Hector </th>
+                <td> Hernan </td>
+                <td>   Hungria   </td>
+                <td> Huron </td>
+                <td> Hacha </td>
+                <td>  H&M </td>
+                <td> Helado </td>
+            </tr>
+            <tr>
+                <th>Hernando </th>
+                <td> Humberto </td>
+                <td>   Honduras   </td>
+                <td> Halcon </td>
+                <td> Humo </td>
+                <td>  Hugo boss </td>
+                <td> Habano </td>
+            </tr>
+        </table>
+        </main>
+        <footer>
+            <h4>Cristian Camilo Ramos Moreno, grupo 5</h4>
+        </footer>
+    </body>
+</html>
